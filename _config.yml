@@ -1,6 +1,8 @@
 # Migrating from maruku
 # for more to see: https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
+kramdown:
+  input: GFM
 
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
