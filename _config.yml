@@ -82,8 +82,8 @@ JB :
   comments :
     provider : disqus
     disqus :
-      # short_name : jekyllbootstrap
-      short_name : hao1987githubio.disqus.com
+      short_name : jekyllbootstrap
+      # short_name : hao1987githubio.disqus.com
     livefyre :
       site_id : 123
     intensedebate :
