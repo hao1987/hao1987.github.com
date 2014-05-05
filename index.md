@@ -5,7 +5,7 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-I am Hao Huang, a 27-year-old programmer living in Arlington, Virginia. A huge Game of Thrones fan, I hate myself for always reading its wiki beforehand. I also like movies, just watched insidious 2 and rush yesterday, into sports and new technologies, keep learning English but not from textbooks.
+I am Hao Huang, a 27-year-old programmer, Chinese through and through, living in Arlington, Virginia. A huge Game of Thrones fan, I hate myself for always reading its wiki beforehand. I also like movies, just watched insidious 2 and rush yesterday, into sports and new technologies, keep learning English but not from textbooks.
 
 <div class="my-photo">
   <a href="https://www.facebook.com/waynephoenix">
