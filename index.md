@@ -5,24 +5,23 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+I am Hao Huang, a 27-year-old programmer living in Arlington, Virginia. A huge Game of Thrones fan, I hate myself for always reading its wiki beforehand. I also like movies, just watched insidious 2 and rush yesterday, into sports and new technologies, keep learning English but not from textbooks.
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+<div class="my-photo">
+  <a href="https://www.facebook.com/waynephoenix">
+    <img id="me" src="/images/me.png" alt=";D" />
+  </a>
+</div>
 
-## Update Author Attributes
+I never blog before, Ser newbie! This site is originally intented to record my life track, probably most of them are work related, slight entertainment perhaps, who knows, but I am definitely adding more and more. 
+Life is good! One of my professors says that, after fixing a bug, not before. Hah! You can learn more about me and my doings by poking around the links here and there on the site, and feel free to leave your feedbacks.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+It's getting late, have to work on the morrow, ah, Mondays.
 
-The theme should reference these variables whenever needed.
-    
+## Amazing blogs: 
+  [Have to know this first](http://rogerdudler.github.io/git-guide/index.zh.html)
+  [牛人](http://www.yangzhiping.com/tech/github.html)
+
 ## Sample Posts
 
 This blog contains sample posts which help stage pages and blog data.
@@ -30,17 +29,12 @@ When you don't need the samples anymore just delete the `_posts/core-samples` fo
 
     $ rm -rf _posts/core-samples
 
-Here's a sample "posts list".
+## My posts lists.
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
