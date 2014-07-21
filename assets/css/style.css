@@ -514,7 +514,7 @@ pre {
 
 .recent-posts {
   float: right;
-  width: 30%;
+  width: 22%;
 }
 
 /* FOOTER
@@ -785,7 +785,8 @@ pre {
 */
 @media only screen and (min-width: 1280px) {
   .the-header .unit-inner {
-    width: 60em;
+    width: 100%;
+    /*width: 60em;*/
   }
   .the-header .logo {
     width: 26.25em;
