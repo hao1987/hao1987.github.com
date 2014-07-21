@@ -14,14 +14,14 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Winter is Coming!
+title : Madream
 tagline: Site Tagline
 author :
   name : Hao the Ironside
   email : waynephoenix@live.com
-  github : https://github.com/hao1987
-  # twitter : @waynephoenix
-  feedburner : haha
+  github : hao1987
+  twitter : waynephoenix
+  # feedburner : haha
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -89,7 +89,7 @@ JB :
     provider : disqus
     disqus :
       # short_name : jekyllbootstrap
-      short_name : hao1987githubio.disqus.com
+      short_name : hao1987githubio
     livefyre :
       site_id : 123
     intensedebate :
@@ -107,7 +107,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-52921707-1'
     getclicky :
       site_id : 
     mixpanel :
