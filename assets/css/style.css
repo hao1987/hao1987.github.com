@@ -514,9 +514,39 @@ pre {
 
 .recent-posts {
   float: right;
-  width: 22%;
+  width: 25%;
 }
 
+.recent-post {
+  height: 80px;
+  margin: 5px 0px 10px 0px;
+}
+
+.recent-post-link {
+  display: block;
+  position: relative;
+  padding: 10px 0px 10px 70px
+}
+
+.recent-post-wrapper {
+  position: absolute;
+  left: 0px;
+  height: 80px;
+  width:80px;
+}
+
+.recent-post-title {
+  font-size: 20px;
+  line-height: 2.5em;
+  font-weight: bold;
+  color: #4b4b4b;
+  margin-left:15px
+}
+
+.recent-post-date {
+  display: block;
+  margin-left: 15px
+}
 /* FOOTER
 ----------------------------------------------- */
 .the-footer {

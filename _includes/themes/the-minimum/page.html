@@ -25,11 +25,12 @@
 					{{ content }}
 				</div><!-- entry-content -->
 				<div class="recent-posts">
-					<ul class="posts">
-					  {% for post in site.posts %}
-					    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-					  {% endfor %}
-					</ul>
+				  {% for post in site.posts %}
+				    <div class="recent-post"><a href="{{ BASE_PATH }}{{ post.url }}" class="recent-post-link">
+				    	<span class="recent-post-wrapper"><img src="assets/images/{{ post.title | downcase | replace:' ','-' }}.png" style="width:100%;margin:0px" /></span>
+				    	<span class="recent-post-title">{{ post.title }}</span>
+				    	<span class="recent-post-date">{{ post.date | date_to_string }}</span></a></div>
+				  {% endfor %}
 				</div>
 			</div><!-- bd -->
 
