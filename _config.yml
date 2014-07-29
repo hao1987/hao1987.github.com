@@ -1,15 +1,28 @@
+timezone: America/New_York
 # Migrating from maruku
 # for more to see: https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 kramdown:
   input: GFM
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+redcarpet:
+  extensions: ["tables", "no_intra_emphasis", "autolink", "fenced_code_blocks"]
 
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+# highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
