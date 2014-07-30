@@ -871,9 +871,13 @@ pre {
   }
   .the-header .logo {
     width: 43.125em;
+    height: 97px;
   }
   .the-header .nav-global {
-    width: 43.125em;
+    /*width: 43.125em;*/
+    width: 100%;
+    text-align: left;
+    border-top: 3px solid #000;
   }
   .unit-article .unit-head-inner, .unit-article .entry-content, .unit-article .misc-content {
     width: 43.125em;
