@@ -26,6 +26,7 @@ So the idea is:
 We implement getConnection() below to fetch our db instance 
 
 ~~~php
+<?php
 abstract class PHPUnit_Extensions_Database_TestCase extends PHPUnit_Extensions_Database_TestCase
 {
     static private $pdo = null;
@@ -47,22 +48,26 @@ abstract class PHPUnit_Extensions_Database_TestCase extends PHPUnit_Extensions_D
         return $this->conn;
     }
 }
+?>
 ~~~
 
 then to setup fixture before each test, suppose we have a user table:
 
 ~~~php
+<?php
 function getDataSet()
 {
 	return new PHPUnit_Extensions_Database_DataSet_YamlDataSet(
 		dirname(__FILE__) . '/user.yml'
 	);
 }
+?>
 ~~~
 
 to use our own db class methods, we have to instantiate it($mysql_obj) somewhere and I put it in setUpBeforeClass(). This instance may vary according to your own requirements, for mine, it has an pdo attribute, so what I do next it to call getConnection() to assign it to that attribute. All in all, the actual db instance I use is instantiated by PHPUnit but this($mysql_obj) can call my featured methods:
 
 ~~~php
+<?php
 class DB_Test extends PHPUnit_Extensions_Database_TestCase
 {
 	private static $mysql_obj;
@@ -80,11 +85,13 @@ class DB_Test extends PHPUnit_Extensions_Database_TestCase
 	}
 	//...real tests begins...
 }
+?>
 ~~~
 
 And of course, we should do the cleaning after each test and close the connection after all:
 
 ~~~php
+<?php
 public function tearDown()
 {
 	$allTables = $this->getDataSet()->getTableNames();
@@ -100,6 +107,7 @@ public static function tearDownAfterClass()
 {
 	self::$mysqldb->close(); //our own close() if we have
 }
+?>
 ~~~
 
 * We certainly need [DbUnit extension](https://github.com/sebastianbergmann/dbunit)

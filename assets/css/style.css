@@ -2,11 +2,11 @@
 
 @import "module.css";
 
-@import "syntaxhighlighter.css";
+@import "syntaxhighlighter copy.css";
 
 @import "helper.css";
 
-@import "coderay-github.css";
+/*@import "coderay-github.css";*/
 /*
 Frameless			<http://framelessgrid.com/>
 by Joni Korpi 		<http://jonikorpi.com/>
